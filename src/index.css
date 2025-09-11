@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.animated-section {
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
