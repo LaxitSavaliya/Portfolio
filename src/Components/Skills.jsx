@@ -45,7 +45,7 @@ const Skills = () => {
                             <li className="flex items-center gap-3">
                                 <CheckCircle2 className="w-5 h-5 text-emerald-500" /><span>Middleware</span></li>
                             <li className="flex items-center gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-emerald-500" /><span>Passport.js Auth</span></li>
+                                <CheckCircle2 className="w-5 h-5 text-emerald-500" /><span>JWT & Passport.js</span></li>
                         </ul>
                     </div>
 
@@ -62,10 +62,6 @@ const Skills = () => {
                                 <CheckCircle2 className="w-5 h-5 text-sky-500" /><span>MongoDB</span></li>
                             <li className="flex items-center gap-3">
                                 <CheckCircle2 className="w-5 h-5 text-sky-500" /><span>SQL</span></li>
-                            <li className="flex items-center gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-sky-500" /><span>Java (Basic)</span></li>
-                            <li className="flex items-center gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-sky-500" /><span>Data Structures</span></li>
                         </ul>
                     </div>
 
@@ -84,8 +80,6 @@ const Skills = () => {
                                 <CheckCircle2 className="w-5 h-5 text-amber-500" /><span>VS Code</span></li>
                             <li className="flex items-center gap-3">
                                 <CheckCircle2 className="w-5 h-5 text-amber-500" /><span>NPM</span></li>
-                            <li className="flex items-center gap-3">
-                                <CheckCircle2 className="w-5 h-5 text-amber-500" /><span>Responsive Design</span></li>
                         </ul>
                     </div>
                 </div>
