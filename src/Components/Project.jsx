@@ -2,48 +2,99 @@ const Project = () => {
     return (
         <section id="projects" className="py-24 bg-white animated-section">
             <div className="container mx-auto px-6">
-                <h2 className="section-title text-center mb-8 text-4xl font-bold">My Projects</h2>
-                <p className="section-subtitle text-center mb-8">Here are some of the projects I'm proud of.</p>
+                <h2 className="text-center mb-6 text-4xl font-bold text-slate-800">
+                    Projects
+                </h2>
+                <p className="text-center mb-12 text-slate-600">
+                    Real-world projects demonstrating my full-stack development skills.
+                </p>
+
                 <div className="grid md:grid-cols-2 gap-10">
-                    <div className="card">
-                        <img src="https://placehold.co/600x400/6366F1/FFFFFF?text=FarAway&font=poppins" alt="FarAway Project"
-                            className="w-full h-52 object-cover" />
-                        <div className="p-6 flex-grow flex flex-col">
-                            <h3 className="text-xl font-bold text-slate-800 mb-2">FarAway - Secure Rental Platform</h3>
+
+                    {/* Diamond Project */}
+                    <div className="rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <img
+                            src="https://placehold.co/600x400/34D399/FFFFFF?text=Diamond+Management+System"
+                            alt="Diamond Management System"
+                            className="w-full h-52 object-cover"
+                        />
+
+                        <div className="p-6 flex flex-col flex-grow">
+                            <h3 className="text-xl font-bold text-slate-800 mb-2">
+                                Diamond Management System
+                            </h3>
+
                             <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Node.js</span><span
-                                    className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Express</span><span
-                                        className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">MongoDB</span><span
-                                            className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Passport.js</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">React</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">Node.js</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">Express.js</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">MongoDB</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">JWT</span>
                             </div>
-                            <p className="text-slate-600 mb-4 flex-grow">A full-stack web app for creating, managing, and reviewing
-                                listings with CRUD operations. Features secure authentication with Passport.js, Cloudinary for image
-                                uploads, and a review system with ratings and validation.</p>
+
+                            <p className="text-slate-600 mb-4 flex-grow">
+                                A full-stack MERN application developed to manage and display
+                                diamond-related data efficiently. Implemented secure user
+                                authentication using JWT, RESTful APIs for data handling, and a
+                                responsive UI. The application is fully deployed with the frontend
+                                on Vercel and backend on Render.
+                            </p>
+
                             <div className="flex space-x-4 mt-auto">
-                                {/* <a href="#" className="font-semibold text-indigo-600 hover:underline">Live Demo</a> */}
-                                <a href="https://github.com/LaxitSavaliya/FarAway" target="_blank"
-                                    className="font-semibold text-indigo-600 hover:underline">Source Code</a>
+                                <a
+                                    href="https://diamond-frontend-umber.vercel.app"
+                                    target="_blank"
+                                    className="font-semibold text-indigo-600 hover:underline"
+                                >
+                                    Live Demo
+                                </a>
+                                <a
+                                    href="https://github.com/LaxitSavaliya/diamond-frontend"
+                                    target="_blank"
+                                    className="font-semibold text-indigo-600 hover:underline"
+                                >
+                                    Source Code
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div className="card">
-                        <img src="https://placehold.co/600x400/34D399/FFFFFF?text=Vlake&font=poppins" alt="Vlake Project"
-                            className="w-full h-52 object-cover" />
-                        <div className="p-6 flex-grow flex flex-col">
-                            <h3 className="text-xl font-bold text-slate-800 mb-2">Vlake - Chat & Video Calling App</h3>
+
+                    {/* Social Media Project */}
+                    <div className="rounded-lg shadow-md overflow-hidden flex flex-col">
+                        <img
+                            src="https://placehold.co/600x400/6366F1/FFFFFF?text=Social+Media+Platform"
+                            alt="Social Media Platform"
+                            className="w-full h-52 object-cover"
+                        />
+
+                        <div className="p-6 flex flex-col flex-grow">
+                            <h3 className="text-xl font-bold text-slate-800 mb-2">
+                                Social Media Platform
+                            </h3>
+
                             <div className="flex flex-wrap gap-2 mb-4">
-                                <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span><span
-                                    className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Node.js</span><span
-                                        className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Stream API</span><span
-                                            className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">JWT</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">Node.js</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">Express.js</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">MongoDB</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">JWT</span>
+                                <span className="text-xs bg-gray-200 px-2 py-1 rounded">REST API</span>
                             </div>
-                            <p className="text-slate-600 mb-4 flex-grow">A full-stack app for language learning with real-time chat/video
-                                calls using Stream API. Implemented JWT authentication, friend requests, notifications, and state
-                                management with Zustand and React Query.</p>
+
+                            <p className="text-slate-600 mb-4 flex-grow">
+                                A backend-driven social media application that allows users to
+                                register, authenticate, create posts, and interact securely.
+                                Designed scalable REST APIs, handled user authorization, and
+                                structured MongoDB schemas following real-world backend practices.
+                            </p>
+
                             <div className="flex space-x-4 mt-auto">
-                                {/* <a href="#" className="font-semibold text-indigo-600 hover:underline">Live Demo</a> */}
-                                <a href="https://github.com/LaxitSavaliya/Vlake-Real-time-Chat-Video-Calling-App" target="_blank"
-                                    className="font-semibold text-indigo-600 hover:underline">Source Code</a>
+                                <a
+                                    href="https://github.com/LaxitSavaliya/Social-_Media"
+                                    target="_blank"
+                                    className="font-semibold text-indigo-600 hover:underline"
+                                >
+                                    Source Code
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -51,6 +102,6 @@ const Project = () => {
             </div>
         </section>
     );
-}
+};
 
 export default Project;

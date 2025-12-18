@@ -9,11 +9,11 @@ import Skills from "./Components/Skills";
 import Animation from "./Animations/Animation";
 
 function App() {
-
   return (
     <>
       <Navbar />
-      <main class="pt-20">
+
+      <main className="pt-20">
         <Animation><Hero /></Animation>
         <Animation><About /></Animation>
         <Animation><Skills /></Animation>
@@ -21,6 +21,7 @@ function App() {
         <Animation><Education /></Animation>
         <Animation><Contact /></Animation>
       </main>
+
       <Footer />
     </>
   );
